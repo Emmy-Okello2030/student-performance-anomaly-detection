@@ -1,0 +1,89 @@
+================================================================================
+DATA CLEANING REPORT
+================================================================================
+
+Date: 2026-03-15 20:22:39
+
+OPERATIONS PERFORMED (15):
+  • Loaded studentInfo: (32593, 12)
+  • studentInfo cleaned: (32593, 13)
+  • Loaded studentRegistration: (32593, 5)
+  • studentRegistration cleaned: (32593, 8)
+  • studentVle cleaned: 10,655,280 rows -> 26074 student summaries
+  • vle cleaned: (6364, 26)
+  • assessments cleaned: (206, 10)
+  • studentAssessment cleaned: (173739, 6)
+  • OULAD merged dataset: (32593, 29)
+  • Math dataset cleaned: (395, 40)
+  • Portuguese dataset cleaned: (649, 40)
+  • UCI merged dataset: (1044, 40)
+  • Processed OULAD for master: (32593, 30)
+  • Processed UCI for master: (1044, 41)
+  • Datasets kept separate due to different schemas
+
+ISSUES FOUND (1):
+  • Missing values found: {'imd_band': 1111}
+
+FIXES APPLIED (62):
+  • Dropped 0 rows with missing final_result
+  • math: Encoded school
+  • math: Encoded sex
+  • math: Encoded address
+  • math: Encoded famsize
+  • math: Encoded Pstatus
+  • math: Encoded schoolsup
+  • math: Encoded famsup
+  • math: Encoded paid
+  • math: Encoded activities
+  • math: Encoded nursery
+  • math: Encoded higher
+  • math: Encoded internet
+  • math: Encoded romantic
+  • math: Validated Medu range
+  • math: Validated Fedu range
+  • math: Created G_avg, G_trend, passed
+  • math: Created total_alcohol
+  • math: Created social_score
+  • math: Created has_health_issues
+  • math: Capped 46 outliers in school
+  • math: Capped 88 outliers in address
+  • math: Capped 41 outliers in Pstatus
+  • math: Capped 83 outliers in failures
+  • math: Capped 51 outliers in schoolsup
+  • math: Capped 81 outliers in nursery
+  • math: Capped 20 outliers in higher
+  • math: Capped 66 outliers in internet
+  • math: Capped 5 outliers in absences
+  • math: Capped 15 outliers in G_trend
+  • math: Capped 92 outliers in has_health_issues
+  • portuguese: Encoded school
+  • portuguese: Encoded sex
+  • portuguese: Encoded address
+  • portuguese: Encoded famsize
+  • portuguese: Encoded Pstatus
+  • portuguese: Encoded schoolsup
+  • portuguese: Encoded famsup
+  • portuguese: Encoded paid
+  • portuguese: Encoded activities
+  • portuguese: Encoded nursery
+  • portuguese: Encoded higher
+  • portuguese: Encoded internet
+  • portuguese: Encoded romantic
+  • portuguese: Validated Medu range
+  • portuguese: Validated Fedu range
+  • portuguese: Created G_avg, G_trend, passed
+  • portuguese: Created total_alcohol
+  • portuguese: Created social_score
+  • portuguese: Created has_health_issues
+  • portuguese: Capped 80 outliers in Pstatus
+  • portuguese: Capped 100 outliers in failures
+  • portuguese: Capped 68 outliers in schoolsup
+  • portuguese: Capped 39 outliers in paid
+  • portuguese: Capped 128 outliers in nursery
+  • portuguese: Capped 69 outliers in higher
+  • portuguese: Capped 151 outliers in internet
+  • portuguese: Capped 3 outliers in absences
+  • portuguese: Capped 1 outliers in G1
+  • portuguese: Capped 7 outliers in G2
+  • portuguese: Capped 19 outliers in G_trend
+  • portuguese: Capped 100 outliers in passed

@@ -1,0 +1,14 @@
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+data/raw/
+data/processed/*.db
+data/processed/oulad_cleaned.csv
+data/processed/uci_cleaned.csv
+!data/processed/*_sample.csv
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
